@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: your-movies-list
+  datasource:
+    url: jdbc:postgresql://localhost/your-movies-list
+    username: postgres
+    password: password

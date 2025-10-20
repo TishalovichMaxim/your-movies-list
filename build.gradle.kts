@@ -34,6 +34,12 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	runtimeOnly("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.13")
+
+	implementation("org.mapstruct:mapstruct:1.6.3")
+
+	annotationProcessor("org.mapstruct:mapstruct-processor:1.6.3")
 }
 
 tasks.withType<Test> {

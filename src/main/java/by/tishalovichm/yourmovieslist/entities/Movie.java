@@ -1,19 +1,21 @@
 package by.tishalovichm.yourmovieslist.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.UUID;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "movies")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Movie {
 
     @Id
-    private Long id;
+    @GeneratedValue
+    private UUID id;
 
     private String name;
 

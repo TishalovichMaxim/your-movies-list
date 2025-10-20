@@ -5,3 +5,8 @@ spring:
     url: jdbc:postgresql://localhost/your-movies-list
     username: postgres
     password: password
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
